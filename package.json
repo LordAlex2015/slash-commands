@@ -1,0 +1,33 @@
+{
+  "name": "discord-slash-commands",
+  "version": "1.0.0",
+  "description": "Discord Slash Commands with Interactions",
+  "main": "main.js",
+  "directories": {
+    "example": "example",
+    "src": "src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordAlex2015/slash-commands.git"
+  },
+  "keywords": [
+    "Discord.js",
+    "Discord",
+    "Eris",
+    "Slash-Commands",
+    "LordAlex2015"
+  ],
+  "author": "ArviX#8443",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LordAlex2015/slash-commands/issues"
+  },
+  "homepage": "https://github.com/LordAlex2015/slash-commands#readme",
+  "dependencies": {
+    "centra": "^2.4.2"
+  }
+}
