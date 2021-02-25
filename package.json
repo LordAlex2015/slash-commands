@@ -2,7 +2,7 @@
   "name": "discord-slash-commands",
   "version": "1.0.0",
   "description": "Discord Slash Commands with Interactions",
-  "main": "main.js",
+  "main": "src/main.js",
   "directories": {
     "example": "example",
     "src": "src"
