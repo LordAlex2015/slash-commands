@@ -1,4 +1,4 @@
-const {CreateSlashCommandRAW, Interaction,  ApplicationCommandOptionType} = require("discord-slash-commands");
+const {CreateSlashCommandRAW, Interaction,  ApplicationCommandOptionType} = require("slash-commands-discord");
 const {Client} = require("discord.js");
 
 this.authToken = "YOUR SUPER SECRET BOT TOKEN";

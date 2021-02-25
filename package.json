@@ -1,5 +1,5 @@
 {
-  "name": "discord-slash-commands",
+  "name": "slash-commands-discord",
   "version": "1.0.0",
   "description": "Discord Slash Commands with Interactions",
   "main": "src/main.js",

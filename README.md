@@ -4,7 +4,7 @@
 Discord Slash Commands and with interactions!
 
 ##Init
-`npm install discord-slash-commands`
+`npm install slash-commands-discord`
 
 ##Usage
 ###Create Command
