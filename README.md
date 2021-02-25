@@ -3,11 +3,11 @@
 
 Discord Slash Commands and with interactions!
 
-##Init
+## Init
 `npm install slash-commands-discord`
 
-##Usage
-###Create Command
+## Usage
+### Create Command
 **ONLY when deploying the command, if you do it multiple times, Discord will be bugged**
 ```js
 let command = new CreateSlashCommand(client.token, client.user.id)
@@ -16,7 +16,7 @@ let command = new CreateSlashCommand(client.token, client.user.id)
     command.addOption("text", "Texte", true)
     command.createCommand()
 ```
-###Interact with commands
+### Interact with commands
 #### Discord.js
 ```js
 client.ws.on("INTERACTION_CREATE", async data => {
