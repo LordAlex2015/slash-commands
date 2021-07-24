@@ -1,4 +1,5 @@
 const centra = require("centra");
+const { MessageEmbed } = require('discord.js');
 
 class SlashCommand {
     constructor(bot_token, bot_id) {
@@ -305,15 +306,22 @@ class Interaction {
             },
             /**
              * @param {String} content
+             * @param {Array<MessageEmbed>} embeds
              * @param {number} type
              * @return {undefined}
              */
-            reply: async (content, type = 4) => {
+            reply: async (content, embeds = [], type = 4) => {
+                
+                for (var i = 0; i < embeds.length; i++) {
+                    embeds[i] = embeds[i].toJSON()
+                }
+                
                 return new Promise(async (resolve) => {
                     const json = {
                         "type": type,
                         "data": {
                             "content": content,
+                            "embeds": embeds,
                         }
                     }
                     await centra(
@@ -329,12 +337,19 @@ class Interaction {
 
             /**
              * @param {String} content
+             * @param {Array<MessageEmbed>} embeds
              * @return {Promise<RawMessage>}
              */
-            replyEdit: async (content) => {
+            replyEdit: async (content, embeds = []) => {
+                
+                for (var i = 0; i < embeds.length; i++) {
+                    embeds[i] = embeds[i].toJSON()
+                }
+                
                 return new Promise(async (resolve) => {
                     const json = {
                         "content": content,
+                         "embeds": embeds,
                     }
                     await centra(
                         this.endpoints.MESSAGES,
