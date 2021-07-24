@@ -316,7 +316,11 @@ class Interaction {
                     embeds[i] = embeds[i].toJSON()
                 }
                 
-                return new Promise(async (resolve) => {
+                return new Promise(async (resolve, reject) => {
+                    if (embeds.length > 10) {
+                        reject("Reached Max Amount of Embeds, the Limit is 10 ");
+                    }
+                    
                     const json = {
                         "type": type,
                         "data": {
@@ -346,7 +350,11 @@ class Interaction {
                     embeds[i] = embeds[i].toJSON()
                 }
                 
-                return new Promise(async (resolve) => {
+                return new Promise(async (resolve, reject) => {
+                    if (embeds.length > 10) {
+                        reject("Reached Max Amount of Embeds, the Limit is 10 ");
+                    }
+                    
                     const json = {
                         "content": content,
                          "embeds": embeds,
